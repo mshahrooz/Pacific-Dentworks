@@ -24,6 +24,8 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
+      - name: Allow Pages artifact to register
+        run: sleep 10
       - name: Publish
         id: deploy
         uses: actions/deploy-pages@v4
