@@ -1,0 +1,12 @@
+/* Polished reviews-page cards — no third-party widgets needed. */
+#fs-reviews .pacific-reviews-actions .rev-card{min-height:365px}
+#fs-reviews .pacific-reviews-actions .rev-copy{flex:1}
+#fs-reviews .pacific-reviews-actions .rev-text{font-style:normal!important;line-height:1.7}
+#fs-reviews .pacific-review-card-title{font:700 clamp(1.25rem,2vw,1.65rem)/1.25 var(--font-display,Georgia,serif);margin:0 0 18px;color:#18253a}
+#fs-reviews .pacific-reviews-actions .rev-role a{display:inline-block;color:var(--theme-primary,#f44336);font-weight:800;text-decoration:none;margin-top:6px}
+#fs-reviews .pacific-reviews-actions .rev-role a:hover{text-decoration:underline}
+#fs-reviews .pacific-reviews-actions .rev-badge{color:var(--theme-primary,#f44336)!important;background:var(--theme-pale,#fff3f1)!important}
+#fs-reviews .pacific-review-footer-cta{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:43px;padding:35px;border:1px solid #e6ebef;border-radius:19px;background:var(--theme-50,#fff9f8)}
+#fs-reviews .pacific-review-footer-cta h3{font:700 1.7rem/1.2 var(--font-display,Georgia,serif);margin:8px 0 12px}
+#fs-reviews .pacific-review-footer-cta p{max-width:570px;margin:0}
+@media(max-width:750px){#fs-reviews .pacific-review-footer-cta{flex-direction:column;align-items:flex-start;padding:25px}}

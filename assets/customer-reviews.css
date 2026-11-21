@@ -1,0 +1,32 @@
+/* Shared testimonial layout, preserving the existing Showtime-style cards. */
+#reviews .rev-grid.pd-real-reviews,
+#fs-reviews .rev-grid.pd-real-reviews { grid-template-columns:repeat(2,minmax(0,1fr)); gap:25px; }
+#reviews .pd-customer-card,
+#fs-reviews .pd-customer-card { min-width:0; height:100%; display:flex; flex-direction:column; }
+#reviews .pd-customer-card .rev-top,
+#fs-reviews .pd-customer-card .rev-top { display:flex; align-items:center; justify-content:space-between; margin-bottom:20px; }
+#reviews .pd-customer-card .rev-copy,
+#fs-reviews .pd-customer-card .rev-copy { display:flex; flex-direction:column; flex:1; }
+#reviews .pd-customer-card .rev-text,
+#fs-reviews .pd-customer-card .rev-text { flex:initial; font-style:italic !important; line-height:1.78 !important; margin:0; white-space:normal; }
+#reviews .pd-customer-card .rev-foot,
+#fs-reviews .pd-customer-card .rev-foot { margin-top:auto; padding-top:20px; border-top:1px solid var(--line,#e4e8f2); display:flex; align-items:center; gap:14px; }
+#reviews .pd-customer-card .rev-meta,
+#fs-reviews .pd-customer-card .rev-meta { display:flex; flex-direction:column; min-width:0; gap:2px; }
+#reviews .pd-customer-card .rev-avatar,
+#fs-reviews .pd-customer-card .rev-avatar { flex:none; display:grid; place-items:center; font-weight:800; }
+#reviews .pd-customer-card .rev-role a,
+#fs-reviews .pd-customer-card .rev-role a { color:var(--theme-primary,#f44336); text-decoration:none; font-weight:750; }
+#fs-reviews .pd-customer-card .rev-role a:hover { text-decoration:underline; }
+#reviews .pd-quote-mark,#fs-reviews .pd-quote-mark { font:700 39px/1 Georgia,serif; color:var(--theme-primary,#f44336); opacity:.65; }
+#reviews .pd-review-more,#fs-reviews .pd-review-more { align-self:flex-start; display:inline-flex; margin:12px 0 18px; padding:4px 0; background:none !important; border:0; box-shadow:none !important; color:var(--theme-primary,#f44336) !important; font-size:13px;line-height:1.4;font-weight:800;font-family:inherit; cursor:pointer; text-decoration:underline; text-underline-offset:4px; }
+#reviews .pd-review-more[hidden],#fs-reviews .pd-review-more[hidden] { display:none !important; }
+html.pd-review-js #reviews .pd-review-quote.is-collapsed,
+html.pd-review-js #fs-reviews .pd-review-quote.is-collapsed {
+  display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:5; line-clamp:5; overflow:hidden;
+}
+#reviews .pd-review-more:focus-visible,#fs-reviews .pd-review-more:focus-visible { outline:2px solid var(--theme-primary,#f44336); outline-offset:4px; }
+@media(max-width:770px){
+ #reviews .rev-grid.pd-real-reviews,#fs-reviews .rev-grid.pd-real-reviews { grid-template-columns:minmax(0,1fr) !important; }
+ #reviews .pd-customer-card,#fs-reviews .pd-customer-card { min-height:unset !important; }
+}

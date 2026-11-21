@@ -1,0 +1,25 @@
+
+/* Pacific Dentworks — shared Showtime-template brand adaptation */
+:root{--blue:#f44336;--blue-hover:#d73228;--navy:#172027;--navy-light:#403136;--pale:#fff3f1;--sky:#ffc9c4;--theme-primary:#f44336;--theme-hover:#d73228;--theme-navy:#172027;--theme-navy-light:#403136;--theme-950:#141a20;--theme-900:#27262c;--theme-800:#67353a;--theme-600:#fc665e;--theme-sky:#ffbab3;--theme-sky-secondary:#ffd0c9;--theme-mid:#f89d95;--theme-line:#f4cdc9;--theme-line-strong:#ecada5;--theme-pale:#fff3f1;--theme-100:#ffe7e3;--theme-50:#fff9f8;--theme-on-primary:#fff;--theme-on-hover:#fff}
+.topbar,.footer,.review-cta,.rev-band{background:var(--theme-primary,#f44336)!important;color:var(--theme-on-primary,#fff)}
+.footer-base{background:var(--theme-hover,#d73228)!important}
+.footer{color:#fff}
+.header .brand .showtime-logo-image{width:clamp(180px,20vw,245px)!important;max-height:77px!important;object-fit:contain}
+.footer .brand .showtime-logo-image{width:min(260px,100%)!important;max-height:none!important;padding:7px 10px;background:#fff;border-radius:10px}
+.header-inner{min-height:82px!important}
+.menu .brand .showtime-logo-image{width:220px!important}
+#showtime-about .page-banner,#showtime-services .page-banner,#showtime-gallery .page-banner,#fs-contact .page-banner,#fs-reviews .page-banner{isolation:isolate}
+button,a{touch-action:manipulation}
+/* Existing source styles sometimes initialize reveal cards hidden; don't allow invisible pages locally. */
+.reveal,.showtime-reveal,[data-rv]{opacity:1!important;visibility:visible!important;transform:none!important;translate:none!important}
+
+.pacific-disclosure{border:1px solid #efc6c0;background:#fff7f5;color:#7c3331;padding:.9rem 1.1rem;border-radius:12px;font-size:.84rem;line-height:1.55;margin:1.25rem 0;max-width:80ch}
+.pacific-disclosure strong{color:#b32a24}
+
+#fs-reviews .rev-stars{display:none!important}
+#fs-reviews .rev-badge{background:#fff3f1!important;color:#bb3028!important}
+#fs-reviews .rev-text{font-style:normal!important}
+#fs-reviews .rev-avatar{font-size:.86rem}
+.pacific-reference-note{color:#56606c;line-height:1.7;font-size:.94rem}
+#fs-contact .form-card .pacific-form-notice{padding:.85rem 1rem;background:#fff3f1;color:#893e38;border-radius:10px;margin:12px 0;font-size:.86rem}
+@media(max-width:600px){.header .brand .showtime-logo-image{width:184px!important}.header-inner{min-height:73px!important}}

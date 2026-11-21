@@ -1,0 +1,35 @@
+/* Pacific Dentworks live theme customizer — shared by all six HTML pages. */
+.pacific-theme-customizer {position:fixed;left:max(16px,env(safe-area-inset-left));bottom:max(18px,env(safe-area-inset-bottom));z-index:2147482000;font:500 14px/1.45 Manrope,Inter,system-ui,sans-serif;color:#142333}
+.pacific-theme-customizer,.pacific-theme-customizer *{box-sizing:border-box}
+.pacific-theme-customizer button {font:inherit;cursor:pointer}
+.pacific-theme-trigger{display:flex;align-items:center;justify-content:center;gap:9px;min-height:45px;padding:10px 15px;background:#fff!important;color:#192939!important;border:1px solid #d7e0e8!important;border-radius:999px!important;box-shadow:0 9px 28px rgba(2,15,31,.20)!important;font-size:13px!important;font-weight:800!important;line-height:1.2!important;transition:box-shadow .25s,transform .25s!important}
+.pacific-theme-trigger svg{stroke:var(--theme-primary,#f44336)}
+.pacific-theme-trigger:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(2,15,31,.25)!important}
+.pacific-theme-trigger:focus-visible,.pacific-theme-panel :focus-visible{outline:3px solid var(--theme-primary,#f44336)!important;outline-offset:3px}
+.pacific-theme-panel {position:absolute;left:0;bottom:calc(100% + 12px);width:min(345px,calc(100vw - 30px));max-height:min(590px,75vh);overflow:auto;padding:20px;border:1px solid #dfe6ed;border-radius:16px;background:#fff;color:#213043;box-shadow:0 20px 62px rgba(5,22,42,.26)}
+.pacific-theme-panel[hidden]{display:none!important}
+.pacific-theme-heading{display:flex;gap:12px;align-items:flex-start;justify-content:space-between;border-bottom:1px solid #e7edf4;padding-bottom:14px;margin-bottom:17px}
+.pacific-theme-heading strong{display:block;font-size:18px;font-weight:900;color:#1b2c3e}
+.pacific-theme-heading p{margin:5px 0 0!important;color:#69798a!important;font-size:12px!important;line-height:1.5!important}
+.pacific-theme-close{display:grid;place-items:center;width:30px;height:30px;flex-shrink:0;background:#eff3f7!important;color:#1b2c3e!important;font-size:22px!important;font-weight:500!important;border:0!important;border-radius:100%!important}
+.pacific-theme-panel label,.pacific-theme-preset-label{display:block;font-size:11px;font-weight:900;letter-spacing:.09em;color:#435368;margin-bottom:9px}
+.pacific-theme-pickers{display:flex;gap:10px;margin-bottom:21px;align-items:center}
+.pacific-theme-pickers input{margin:0!important}
+.pacific-theme-pickers input[type=color]{width:56px!important;height:45px!important;flex:none;padding:3px!important;cursor:pointer;border-radius:9px!important;border:1px solid #c8d4df!important;background:#fff!important}
+.pacific-theme-pickers input[type=text]{width:100%!important;min-width:0;flex:1;height:45px!important;max-height:45px!important;padding:10px 13px!important;border:1px solid #c8d4df!important;border-radius:9px!important;color:#1b2c3e!important;background:#fff!important;font:700 15px Manrope,Inter,system-ui,sans-serif!important;text-transform:uppercase!important}
+.pacific-theme-pickers input[aria-invalid=true]{border-color:#b91c1c!important}
+.pacific-theme-swatches{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin-bottom:17px}
+.pacific-theme-swatches button{width:100%;aspect-ratio:1;border:3px solid #fff!important;border-radius:50%!important;background:var(--swatch)!important;box-shadow:0 0 0 1px #c3cdda!important;padding:0!important;min-width:0;transition:transform .22s!important}
+.pacific-theme-swatches button:hover{transform:scale(1.12)!important}
+.pacific-theme-swatches button[aria-pressed=true]{box-shadow:0 0 0 2px #182d41!important}
+.pacific-theme-swatches button[aria-pressed=true]::after{content:'✓';color:#fff;font-size:14px;text-shadow:0 1px 4px #0008;font-weight:900}
+.pacific-theme-feedback{min-height:20px;color:#6b7a8b!important;font-size:12px!important;margin:0 0 10px!important}
+.pacific-theme-reset{display:block;width:100%;padding:12px;background:#f1f4f7!important;border:1px solid #dce4eb!important;border-radius:8px!important;color:#26394b!important;font-weight:800!important}
+.pacific-theme-reset:hover{background:#e5ecf2!important}
+/* Brand changes should extend beyond the primary buttons to site-wide chrome. */
+.topbar,.footer,.review-cta,.rev-band{background:var(--theme-primary,#f44336)!important;color:var(--theme-on-primary,#fff)!important}
+.footer-base{background:var(--theme-hover,#d73228)!important}
+.button--primary{background:var(--theme-primary,#f44336)!important;border-color:var(--theme-primary,#f44336)!important;color:var(--theme-on-primary,#fff)!important}
+.button--primary:hover{background:var(--theme-hover,#d73228)!important;color:var(--theme-on-hover,#fff)!important}
+.pacific-theme-light .topbar :is(a,span),.pacific-theme-light .footer :is(a,p,h2,h3,h4),.pacific-theme-light .rev-band :is(h1,h2,h3,p,a){color:var(--theme-on-primary,#17203a)!important}
+@media(max-width:520px){.pacific-theme-customizer{left:12px;bottom:max(12px,env(safe-area-inset-bottom))}.pacific-theme-panel{padding:17px}.pacific-theme-trigger{font-size:12px!important}}

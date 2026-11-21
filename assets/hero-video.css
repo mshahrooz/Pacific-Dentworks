@@ -1,0 +1,12 @@
+/* 13 seconds from the supplied video, encoded at 0.8x into a seamless 16.25s loop. */
+.hero{isolation:isolate!important}
+.hero .hero-visuals{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;overflow:hidden!important;z-index:0!important;background:#131b21 url('videos/hero-poster.jpg') center/cover no-repeat!important}
+.hero .hero-visuals>.hero-photo{display:none!important}
+.hero .hero-visuals>.showtime-hero-video{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center center!important;z-index:0!important;display:block!important;opacity:1!important;visibility:visible!important;pointer-events:none!important;transform:none!important}
+.hero::before{z-index:1!important;pointer-events:none}
+.hero .hero-inner{position:relative!important;z-index:3!important}
+.hero .hero-arrow{z-index:7!important}
+.hero .hero-controls{z-index:7!important}
+.hero .showtime-video-toggle{display:none!important}
+.hero .showtime-video-toggle.needs-play{display:inline-grid!important}
+@media(max-width:700px){.hero .hero-visuals>.showtime-hero-video{object-position:center center!important}}
